@@ -2,7 +2,7 @@
 
 **Backend Golang Developer** — Tashkent, Uzbekistan
 
-[GitHub](https://github.com/) · [LinkedIn](https://linkedin.com/) · [LeetCode](https://leetcode.com/) · +998937536571 · bakhodiryashinmansur@gmail.com
+[GitHub](https://github.com/bakhod1r) · [LinkedIn](https://www.linkedin.com/in/baxodir-mansurov-602bb2283/) · [LeetCode](https://leetcode.com/u/bakhod1r/) · +998937536571 · bakhodiryashinmansur@gmail.com
 
 A member of a team responsible for end-to-end delivery of business features, from gathering requirements and designing solutions to implementing and testing outcomes. As a T-shaped engineer, my responsibilities extend to all aspects of this development life cycle.
 

@@ -66,6 +66,33 @@ Built and maintained three production backends: a **real-estate marketplace, edu
 * Implemented map-based property search using **GiST-indexed PostgreSQL geometry columns**, supporting viewport and polygon queries.
 * Unified simple, advanced, title, polygon, and map-based property search behind a single service contract.
 
+## OPEN SOURCE
+
+Released Go libraries and tools, published on [GitHub](https://github.com/bakhod1r):
+
+**Security & API**
+* [guard](https://github.com/bakhod1r/guard) (v0.2.0) — authorization and API security: sessions, RBAC, ABAC, API keys, rate limiting, audit logging.
+* [spector](https://github.com/bakhod1r/spector) (v0.6.0) — OpenAPI documentation generator that auto-detects routes in Gin, Chi, and stdlib.
+
+**Data & Infrastructure**
+* [cachex](https://github.com/bakhod1r/cachex) (v0.5.0) — caching library with multiple eviction policies and pluggable storage backends.
+* [seedora](https://github.com/bakhod1r/seedora) (v0.7.0) — discovers database schema and generates realistic seed data.
+* [synth](https://github.com/bakhod1r/synth) (v1.7.0) — locale-aware synthetic data engine for API and load testing.
+* [oneenv](https://github.com/bakhod1r/oneenv) (v1.10.2) — parses .env files into Go structs; zero dependencies, pure stdlib.
+* [enumx](https://github.com/bakhod1r/enumx) (v1.0.0) — type-safe enum toolkit with validation, parsing, JSON, SQL, and HTTP support.
+
+**Parsing & Validation**
+* [phonex](https://github.com/bakhod1r/phonex) (v0.2.0) — phone number parsing and formatting generated from Google's libphonenumber; zero-allocation parsing.
+* [emailx](https://github.com/bakhod1r/emailx) (v0.4.0) — email validation with SPF/DMARC/DKIM parsing, SMTP verification, and DNS caching.
+* [uax](https://github.com/bakhod1r/uax) (v0.1.0) — User-Agent, Client Hints, and fetch-metadata detection with per-field confidence; zero allocations.
+* [alx](https://github.com/bakhod1r/alx) (v0.1.0) — Accept-Language parsing, matching, and HTTP locale resolution.
+* [devicex](https://github.com/bakhod1r/devicex) (v0.3.0) — offline Android device catalogue and code resolver.
+
+**Tools & Apps**
+* [gopher-workplace](https://github.com/bakhod1r/gopher-workplace) (v0.3.0) — learn Go by fixing production-style code against tests and linters.
+* [awesome-agents](https://github.com/bakhod1r/awesome-agents) (v1.5.0) — 109 Claude Code subagents across 16 engineering teams, installable as a plugin marketplace.
+* [sharingan](https://github.com/bakhod1r/sharingan) (v1.11.1) — privacy-first macOS productivity app (Swift): Pomodoro, tasks, focus enforcement, app blocking.
+
 ## EDUCATION
 
 ### Navoi State Mining and Technology University

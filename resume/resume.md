@@ -6,15 +6,15 @@
 
 ## SUMMARY
 
-Backend engineer with **4+ years of Golang** experience building production systems across **fintech, telecom, CRM, warehouse, and marketplace** domains — from investment and payment platforms to telecom billing, education and warehouse CRMs, and real-estate and food-delivery marketplaces.
-
-Specialized in **payments, distributed systems, and PostgreSQL**: provider integrations, idempotent money flows, reconciliation, and legacy-to-microservice migrations with zero downtime. Owns features end to end — from requirements and system design to implementation, testing, deployment, and production operations.
+Backend engineer with **4+ years of Golang** experience building production systems across **fintech, telecom, ecommerce, CRM, warehouse, and marketplace** domains — from investment and payment platforms to telecom billing, education and warehouse CRMs, and real-estate and food-delivery marketplaces.
 
 ## EXPERIENCE
 
 ### WayII — Software Engineer
 
 **May 2026 – Present · Tashkent, Uzbekistan**
+
+*Investment fintech platform — investors buy lots in companies, receive dividends, and manage payments, deposits, and withdrawals.*
 
 * Owned the payment service end to end, including **Payme integration, withdrawals, and three Via cash desks** for dividends, deposits, and top-ups, as well as a reconciliation worker that detects status, amount, and missing-record mismatches across two providers.
 * Improved cash-desk performance by **10%** by caching frequently accessed configuration in Redis.
@@ -29,6 +29,8 @@ Specialized in **payments, distributed systems, and PostgreSQL**: provider integ
 
 **Dec 2024 – May 2026 · Tashkent, Uzbekistan**
 
+*Telecom operator — internet, TV, and Cinerama video services with billing, payments, and subscriber management.*
+
 * Reduced payment **p95 latency by 20%** with zero production downtime by eliminating a redundant Go proxy layer, rewriting the PHP backend in Go, and consolidating both into a unified **gRPC Payment service** with backward-compatible APIs.
 * Unified integrations with **Alif, Plum/MyUzcard, and OpenTech** for payments, cashback, and installment products.
 * Integrated **10+ external systems**, including payment providers, MyID identity verification, SMS gateways, legacy billing systems, contract and ticketing systems, and the Cinerama.uz.
@@ -39,6 +41,8 @@ Specialized in **payments, distributed systems, and PostgreSQL**: provider integ
 ### Vanguard — Software Engineer
 
 **Apr 2024 – Dec 2024 · Tashkent, Uzbekistan**
+
+*Software company — food-delivery platform, logistics, and warehouse CRM systems.*
 
 Took a food-delivery startup from an empty repository to a production launch.
 
@@ -51,6 +55,8 @@ Took a food-delivery startup from an empty repository to a production launch.
 
 **Aug 2023 – Apr 2024 · Tashkent, Uzbekistan**
 
+*Software agency — CRM for education centers and ordering bots for restaurants.*
+
 * Built a CRM platform for educational institutions covering **student management, course scheduling, and communication workflows**.
 * Developed a restaurant ordering bot and integrated it with backend business workflows.
 * Improved SQL performance by refactoring complex queries into **CTEs**, introducing appropriate indexes, and analyzing PostgreSQL execution plans.
@@ -58,6 +64,8 @@ Took a food-delivery startup from an empty repository to a production launch.
 ### Smart Code — Software Engineer
 
 **Mar 2022 – Aug 2023 · Tashkent, Uzbekistan**
+
+*Software development company — real-estate marketplace, education and warehouse CRMs, and e-commerce platforms.*
 
 Built and maintained three production backends: a **real-estate marketplace, education/warehouse CRM, and e-commerce ordering platform**.
 

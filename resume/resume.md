@@ -74,8 +74,8 @@ More on [github.com/bakhod1r](https://github.com/bakhod1r).
 
 ## CERTIFICATIONS
 
-* HackerRank — SQL (Advanced)
-* HackerRank — Go (Beginner)
+* [HackerRank — SQL (Advanced)](https://www.hackerrank.com/certificates/e131c1c7cde1) · Jan 2024
+* [HackerRank — Go (Basic)](https://www.hackerrank.com/certificates/413e13d8312d) · Dec 2023
 
 Guard — Authentication, RBAC/ABAC, rate limiting, and audit logging in Go.
 Cachex — Multi-level caching, Redis, invalidation, and stampede protection.

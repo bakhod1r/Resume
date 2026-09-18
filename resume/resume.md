@@ -1,113 +1,65 @@
 # Mansurov Baxodir
 
-**Backend Golang Developer** — Tashkent, Uzbekistan
+**Middle Software Engineer** — Tashkent, Uzbekistan
 +998 93 753 65 71 · [bakhodiryashinmansur@gmail.com](mailto:bakhodiryashinmansur@gmail.com)
 [GitHub](https://github.com/bakhod1r) · [LinkedIn](https://www.linkedin.com/in/baxodir-mansurov-602bb2283/) · [LeetCode](https://leetcode.com/u/bakhod1r/)
-
 ## SUMMARY
 
-Backend engineer with **4+ years of Golang** experience building production systems across **fintech, telecom, ecommerce, CRM, warehouse, and marketplace** domains — from investment and payment platforms to telecom billing, education and warehouse CRMs, and real-estate and food-delivery marketplaces.
+Backend engineer with **5 years of Golang experience** building and operating production systems across **fintech, telecom, e-commerce, CRM, warehouse, and marketplace** domains — including investment and payment platforms, telecom billing, education and warehouse management systems, and real-estate and food-delivery marketplaces.
+
+Strong focus on **payment systems, distributed systems, PostgreSQL, system design, performance optimization, reliability, and production operations**. Experienced in owning services end to end, from requirements and architecture through implementation, testing, deployment, and production support.
 
 ## EXPERIENCE
 
-### WayII — Software Engineer
+### WayII — Investment & Payment Platform
 
-**May 2026 – Present · Tashkent, Uzbekistan**
+**Software Engineer · May 2026 – Present · Tashkent, Uzbekistan**
 
-*Investment fintech platform — investors buy lots in companies, receive dividends, and manage payments, deposits, and withdrawals.*
+* Owned the **payment service end to end**, covering **payment providers, A2C/C2A flows, withdrawals, and card payment processing**, including multi cash desks for **dividends, deposits, and top-ups**.
+* Designed and implemented a **payment reconciliation worker** that continuously detects status, amount, and missing-record mismatches across two payment providers, enabling operational issues to be identified and resolved automatically.
+* Improved cash-desk performance by **20%** by caching frequently accessed configuration in Redis.
+* Designed a layered **payment idempotency and concurrency-control mechanism** combining distributed locks, idempotency keys, explicit payment states (**pending, completed, cancelled**), and time-window deduplication to prevent duplicate charges across retries and concurrent requests.
+* Eliminated partial-write inconsistencies by introducing **MongoDB multi-document transactions** around multi-step payment operations, ensuring related writes are committed or rolled back atomically.
+* Strengthened payment security by encrypting previously plaintext card tokens and reducing API responses to expose only required data.
+* Decoupled 100k+ investor notifications from payment processing through an asynchronous **RabbitMQ event pipeline and AsyncQueue**, preventing notification delivery from increasing payment latency.
 
-* Owned the payment service end to end, including **Payme integration, withdrawals, and three Via cash desks** for dividends, deposits, and top-ups, as well as a reconciliation worker that detects status, amount, and missing-record mismatches across two providers.
-* Improved cash-desk performance by **10%** by caching frequently accessed configuration in Redis.
-* Prevented duplicate payments using **distributed locking, idempotency keys, payment state machines, and time-window deduplication**, forwarding idempotency identifiers to Via as external transaction IDs.
-* Eliminated partial-write inconsistencies using **MongoDB multi-document transactions**, ensuring that failures during multi-step payment operations roll back related writes atomically.
-* Encrypted previously plaintext card tokens and reduced API response payloads to prevent unnecessary exposure of internal data.
-* Built an asynchronous notification pipeline with **RabbitMQ**, decoupling payment processing from investor notifications.
-* Reduced database writes during push-notification broadcasts by approximately **500×** through a two-stage worker pipeline that batches counter updates while independently retrying tokens.
-* Added restart recovery and **dead-letter queue reprocessing** to improve reliability of notification delivery.
+### Turon Telecom — Telecommunications & Digital Services Platform
 
-### Turon Telecom — Software Engineer
+**Software Engineer · Dec 2024 – May 2026 · Tashkent, Uzbekistan**
 
-**Dec 2024 – May 2026 · Tashkent, Uzbekistan**
+* Reduced payment **p95 latency by 20% with zero production downtime** by eliminating a redundant Go proxy layer, rewriting the underlying PHP backend in Go, and consolidating the architecture into a unified **gRPC Payment service** with backward-compatible APIs.
+* Integrated **10+ external and internal systems,** including 3 payment providers, MyID, SMS gateways, 2 legacy billing systems, contract and ticketing systems, and the Cinerama.uz.
+* Designed and implemented a Go-based **scheduling platform** for subscription and recurring-installment autopayments, loyalty tiers, cashback campaigns, and tariff activation with batch-processing workflows using **row-level pessimistic locking**.
 
-*Telecom operator — internet, TV, and Cinerama video services with billing, payments, and subscriber management.*
+### Vanguard — Food Delivery Startup
 
-* Reduced payment **p95 latency by 20%** with zero production downtime by eliminating a redundant Go proxy layer, rewriting the PHP backend in Go, and consolidating both into a unified **gRPC Payment service** with backward-compatible APIs.
-* Unified integrations with **Alif, Plum/MyUzcard, and OpenTech** for payments, cashback, and installment products.
-* Integrated **10+ external systems**, including payment providers, MyID identity verification, SMS gateways, legacy billing systems, contract and ticketing systems, and the Cinerama.uz.
-* Designed and implemented a Go-based scheduling platform for subscription and recurring installment autopayments, loyalty tiers, cashback campaigns, and Cinerama tariff activation.
-* Built batch-processing workflows using **row-level pessimistic locking** to prevent concurrent job execution and data inconsistencies.
-* Integrated monitoring and alerting to track deployment health and application performance.
+**Software Engineer · Apr 2024 – Dec 2024 · Tashkent, Uzbekistan**
 
-### Vanguard — Software Engineer
+* Designed the system architecture around scalability and reliability requirements and produced **high-level architecture diagrams and technical documentation**.
+* Reworked product variant selection by representing variant attributes as **dot-separated prefix paths** and traversing them as a trie, allowing each customer selection to narrow the search branch instead of repeatedly scanning the full variant matrix.
+* Designed and optimized **PostgreSQL data models, queries, and indexes** for production workloads.
 
-**Apr 2024 – Dec 2024 · Tashkent, Uzbekistan**
+### Iqro Agency — Education CRM & Restaurant Automation
 
-*Software company — food-delivery platform, logistics, and warehouse CRM systems.*
+**Software Engineer · Aug 2023 – Apr 2024 · Tashkent, Uzbekistan**
 
-Took a food-delivery startup from an empty repository to a production launch.
+* Built a production **CRM platform for education centers**, covering student management, courses, scheduling, and communication workflows.
+* Developed a restaurant ordering bot and integrated its workflows with backend services.
+* Optimized PostgreSQL workloads by refactoring complex queries into **CTEs**, introducing targeted indexes, and analyzing execution plans to identify expensive query operations.
 
-* Designed the application architecture and analyzed scalability and reliability requirements, producing high-level architecture diagrams and technical documentation.
-* Optimized product variant selection by representing variant attributes as **dot-separated prefix paths** and traversing them as a trie, allowing each customer selection to narrow the search branch instead of re-filtering the entire attribute matrix.
-* Designed and optimized **PostgreSQL data models, queries, and indexes** for high-volume workloads.
-* Built automated **GitLab CI/CD pipelines** covering build, testing, and deployment.
+### Smart Code — Marketplace, CRM & E-commerce Platforms
 
-### Iqro Agency — Software Engineer
-
-**Aug 2023 – Apr 2024 · Tashkent, Uzbekistan**
-
-*Software agency — CRM for education centers and ordering bots for restaurants.*
-
-* Built a CRM platform for educational institutions covering **student management, course scheduling, and communication workflows**.
-* Developed a restaurant ordering bot and integrated it with backend business workflows.
-* Improved SQL performance by refactoring complex queries into **CTEs**, introducing appropriate indexes, and analyzing PostgreSQL execution plans.
-
-### Smart Code — Software Engineer
-
-**Mar 2022 – Aug 2023 · Tashkent, Uzbekistan**
-
-*Software development company — real-estate marketplace, education and warehouse CRMs, and e-commerce platforms.*
-
-Built and maintained three production backends: a **real-estate marketplace, education/warehouse CRM, and e-commerce ordering platform**.
+**Software Engineer · Mar 2022 – Aug 2023 · Tashkent, Uzbekistan**
 
 * Reduced frequently used API response times by **30%** by replacing per-request database connections with a tuned **pgx connection pool** and eliminating N+1 queries from high-traffic list endpoints.
-* Implemented **Payme and Click merchant integrations** end to end, handling all five transaction states and ensuring provider retries could not result in duplicate charges.
-* Implemented map-based property search using **GiST-indexed PostgreSQL geometry columns**, supporting viewport and polygon queries.
-* Unified simple, advanced, title, polygon, and map-based property search behind a single service contract.
-
-## OPEN SOURCE
-
-Released Go libraries and tools, published on [GitHub](https://github.com/bakhod1r):
-
-**Security & API**
-* [guard](https://github.com/bakhod1r/guard) (v0.2.0) — authorization and API security: sessions, RBAC, ABAC, API keys, rate limiting, audit logging.
-* [spector](https://github.com/bakhod1r/spector) (v0.6.0) — OpenAPI documentation generator that auto-detects routes in Gin, Chi, and stdlib.
-
-**Data & Infrastructure**
-* [cachex](https://github.com/bakhod1r/cachex) (v0.5.0) — caching library with multiple eviction policies and pluggable storage backends.
-* [seedora](https://github.com/bakhod1r/seedora) (v0.7.0) — discovers database schema and generates realistic seed data.
-* [synth](https://github.com/bakhod1r/synth) (v1.7.0) — locale-aware synthetic data engine for API and load testing.
-* [oneenv](https://github.com/bakhod1r/oneenv) (v1.10.2) — parses .env files into Go structs; zero dependencies, pure stdlib.
-* [enumx](https://github.com/bakhod1r/enumx) (v1.0.0) — type-safe enum toolkit with validation, parsing, JSON, SQL, and HTTP support.
-
-**Parsing & Validation**
-* [phonex](https://github.com/bakhod1r/phonex) (v0.2.0) — phone number parsing and formatting generated from Google's libphonenumber; zero-allocation parsing.
-* [emailx](https://github.com/bakhod1r/emailx) (v0.4.0) — email validation with SPF/DMARC/DKIM parsing, SMTP verification, and DNS caching.
-* [uax](https://github.com/bakhod1r/uax) (v0.1.0) — User-Agent, Client Hints, and fetch-metadata detection with per-field confidence; zero allocations.
-* [alx](https://github.com/bakhod1r/alx) (v0.1.0) — Accept-Language parsing, matching, and HTTP locale resolution.
-* [devicex](https://github.com/bakhod1r/devicex) (v0.3.0) — offline Android device catalogue and code resolver.
-
-**Tools & Apps**
-* [gopher-workplace](https://github.com/bakhod1r/gopher-workplace) (v0.3.0) — learn Go by fixing production-style code against tests and linters.
-* [awesome-agents](https://github.com/bakhod1r/awesome-agents) (v1.5.0) — 109 Claude Code subagents across 16 engineering teams, installable as a plugin marketplace.
-* [sharingan](https://github.com/bakhod1r/sharingan) (v1.11.1) — privacy-first macOS productivity app (Swift): Pomodoro, tasks, focus enforcement, app blocking.
+* Implemented **multi payment providers, payment protocols** end to end, covering all five transaction states and making payment processing resilient to provider retries and duplicate callbacks.
+* Implemented map-based (polygon) real-estate search using **GiST-indexed PostgreSQL geometry columns**, supporting viewport and polygon-based queries.
 
 ## EDUCATION
 
 ### Navoi State Mining and Technology University
 
 **BSc in Electrical Engineering · 2018 – 2022**
-
-GPA: **3.1 / 4.0**
 
 ## CERTIFICATIONS
 
@@ -116,22 +68,14 @@ GPA: **3.1 / 4.0**
 
 ## TECHNICAL SKILLS
 
-**Core:** Golang, PostgreSQL, MySQL, Redis, Gin, MinIO
+**Languages & Backend:** Go, PostgreSQL, MySQL, REST, gRPC, Gin
 
-**Backend & Distributed Systems:** gRPC, REST APIs, RabbitMQ, distributed locking, idempotency, asynchronous processing, background workers
+**Distributed Systems:** RabbitMQ, asynchronous processing, background workers, distributed locking, idempotency, retries, dead-letter queues, concurrency control
 
-**Databases:** PostgreSQL, MySQL, MongoDB, SQL optimization, indexing, transactions, query planning, pgx
+**Databases:** PostgreSQL, MySQL, MongoDB, pgx, SQL optimization, indexing, query planning, transactions
 
-**DevOps & Infrastructure:** Docker, GitLab CI/CD, Nginx, Prometheus, Grafana, Bash
+**Infrastructure & DevOps:** Docker, GitLab CI/CD, Nginx, Prometheus, Grafana, Bash
+
+**Caching & Storage:** Redis, MinIO
 
 **Prior Experience:** Python, Java, NestJS, Jenkins
-
-## INTERESTS
-
-* Algorithmic problem solving and competitive programming
-* System design and distributed systems
-* Learning new technologies and engineering practices
-* Reading technical and non-technical books
-* Listening to podcasts
-* Learning foreign languages
-* Participating in developer communities and meetups

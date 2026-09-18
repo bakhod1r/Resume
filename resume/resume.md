@@ -6,9 +6,9 @@
 
 ## SUMMARY
 
-Backend engineer specializing in **Golang, distributed systems, payment platforms, and PostgreSQL**. Experienced in owning business features end to end—from requirements and system design to implementation, testing, deployment, and production operations.
+Backend engineer with **4+ years of Golang** experience building production systems across **fintech, telecom, CRM, warehouse, and marketplace** domains — from investment and payment platforms to telecom billing, education and warehouse CRMs, and real-estate and food-delivery marketplaces.
 
-A T-shaped engineer with hands-on experience across **backend development, system design, databases, integrations, CI/CD, observability, and reliability engineering**. Focused on building scalable, maintainable, and production-ready systems.
+Specialized in **payments, distributed systems, and PostgreSQL**: provider integrations, idempotent money flows, reconciliation, and legacy-to-microservice migrations with zero downtime. Owns features end to end — from requirements and system design to implementation, testing, deployment, and production operations.
 
 ## EXPERIENCE
 

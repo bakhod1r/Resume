@@ -7,8 +7,6 @@
 
 Backend engineer with **5 years of Golang experience** building and operating production systems across **fintech, telecom, e-commerce, CRM, warehouse, and marketplace** domains — including investment and payment platforms, telecom billing, education and warehouse management systems, and real-estate and food-delivery marketplaces.
 
-Strong focus on **payment systems, distributed systems, PostgreSQL, system design, performance optimization, reliability, and production operations**. Experienced in owning services end to end, from requirements and architecture through implementation, testing, deployment, and production support.
-
 ## EXPERIENCE
 
 ### WayII — Investment & Fintech Platform

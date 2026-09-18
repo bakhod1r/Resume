@@ -79,6 +79,14 @@ More on [github.com/bakhod1r](https://github.com/bakhod1r).
 * HackerRank — SQL (Advanced)
 * HackerRank — Go (Beginner)
 
+Guard — Authentication, RBAC/ABAC, rate limiting, and audit logging in Go.
+Cachex — Multi-level caching, Redis, invalidation, and stampede protection.
+Synth — High-performance synthetic data generation for testing and load testing.
+Oneenv — .env configuration, validation, secrets, and hot reload.
+Seedora — Database seeding and realistic test-data generation.
+Specter — Go-based developer/security tooling.
+
+
 ## TECHNICAL SKILLS
 
 **Languages & Backend:** Go, PostgreSQL, MySQL, REST, gRPC, Gin

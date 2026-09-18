@@ -11,7 +11,7 @@ Strong focus on **payment systems, distributed systems, PostgreSQL, system desig
 
 ## EXPERIENCE
 
-### WayII — Investment & Payment Platform
+### WayII — Investment & Fintech Platform
 
 **Software Engineer · May 2026 – Present · Tashkent, Uzbekistan**
 
@@ -54,6 +54,19 @@ Strong focus on **payment systems, distributed systems, PostgreSQL, system desig
 * Reduced frequently used API response times by **30%** by replacing per-request database connections with a tuned **pgx connection pool** and eliminating N+1 queries from high-traffic list endpoints.
 * Implemented **multi payment providers, payment protocols** end to end, covering all five transaction states and making payment processing resilient to provider retries and duplicate callbacks.
 * Implemented map-based (polygon) real-estate search using **GiST-indexed PostgreSQL geometry columns**, supporting viewport and polygon-based queries.
+
+## OPEN SOURCE
+
+Released Go libraries and tools:
+
+* [guard](https://github.com/bakhod1r/guard) (v0.2.0) — authorization and API security: sessions, RBAC, ABAC, API keys, rate limiting, audit logging.
+* [cachex](https://github.com/bakhod1r/cachex) (v0.5.0) — caching library with multiple eviction policies and pluggable storage backends.
+* [synth](https://github.com/bakhod1r/synth) (v1.7.0) — locale-aware synthetic data engine for API and load testing.
+* [oneenv](https://github.com/bakhod1r/oneenv) (v1.10.2) — parses .env files into Go structs; zero dependencies, pure stdlib.
+* [seedora](https://github.com/bakhod1r/seedora) (v0.7.0) — discovers database schema and generates realistic seed data.
+* [spector](https://github.com/bakhod1r/spector) (v0.6.0) — OpenAPI documentation generator that auto-detects routes in Gin, Chi, and stdlib.
+
+More on [github.com/bakhod1r](https://github.com/bakhod1r).
 
 ## EDUCATION
 

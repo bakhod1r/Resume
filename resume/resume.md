@@ -15,9 +15,7 @@ Backend engineer with **5 years of Golang experience** building and operating pr
 
 * Owned the **payment service end to end**, covering **payment providers, A2C/C2A flows, withdrawals, and card payment processing**, including multi cash desks for **dividends, deposits, and top-ups**.
 * Designed and implemented a **payment reconciliation worker** that continuously detects status, amount, and missing-record mismatches across two payment providers, enabling operational issues to be identified and resolved automatically.
-* Improved cash-desk performance by **20%** by caching frequently accessed configuration in Redis.
 * Designed a layered **payment idempotency and concurrency-control mechanism** combining distributed locks, idempotency keys, explicit payment states (**pending, completed, cancelled**), and time-window deduplication to prevent duplicate charges across retries and concurrent requests.
-* Eliminated partial-write inconsistencies by introducing **MongoDB multi-document transactions** around multi-step payment operations, ensuring related writes are committed or rolled back atomically.
 * Strengthened payment security by encrypting previously plaintext card tokens and reducing API responses to expose only required data.
 * Decoupled 100k+ investor notifications from payment processing through an asynchronous **RabbitMQ event pipeline and AsyncQueue**, preventing notification delivery from increasing payment latency.
 

@@ -3,7 +3,7 @@
 DevOps Engineer & Backend (Golang) — Tashkent, Uzbekistan
 
 - Web: https://bakhod1r.github.io/Resume/
-- PDF: [Backend and DevOps Engineer CV](Bakhodir%20Yashin%20Mansur%20Backend%20and%20DevOps%20Engineer%20CV.pdf)
+- PDF: [Backend and DevOps Engineer CV](Mansurov_Baxodir_CV.pdf)
 - GitHub: https://github.com/bakhod1r
 - LinkedIn: https://www.linkedin.com/in/baxodir-mansurov-602bb2283/
 
@@ -15,7 +15,7 @@ DevOps Engineer & Backend (Golang) — Tashkent, Uzbekistan
 | `index.md` | Site home page, PDF download link |
 | `_config.yml` | Jekyll config (`jekyll-theme-minimal`) |
 | `.github/workflows/pages.yml` | Deploys GitHub Pages on push to `main` |
-| `Bakhodir Yashin Mansur Backend and DevOps Engineer CV.md` / `.pdf` | CV in Markdown and PDF |
+| `Mansurov_Baxodir_CV.pdf` | CV PDF, built by `scripts/build-pdf.sh` |
 
 ## Updating
 

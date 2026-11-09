@@ -90,6 +90,6 @@
 
 **Databases & Caching:** PostgreSQL, MySQL, MongoDB, Amazon Aurora, ClickHouse, Redis, MinIO, pgx, SQL optimization, indexing, streaming replication, read replicas
 
-**Infrastructure & DevOps:** Docker, Docker Swarm, Terraform, AWS, Teleport, Metabase, SigNoz, GitLab CI/CD, GitHub Actions, Nginx, Prometheus, Grafana, Bash
+**Infrastructure & DevOps:** Docker, Docker Swarm, Terraform, AWS, Teleport, Metabase, SigNoz, GitLab CI/CD, GitHub Actions, Jenkins, Nginx, Prometheus, Grafana, Bash
 
-**Prior Experience:** Java, NestJS, Jenkins
+**Prior Experience:** Java, NestJS

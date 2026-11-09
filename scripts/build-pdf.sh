@@ -2,10 +2,10 @@
 # Build CV PDF from resume/resume.md (pandoc + headless Chrome).
 set -euo pipefail
 cd "$(dirname "$0")/.."
-OUT="Mansurov_Baxodir_CV.pdf"
+OUT="Baxodir_Mansurov_DevOps_Backend_Engineer_CV.pdf"
 TMP="$(mktemp -d)"
 CHROME="${CHROME:-/Applications/Google Chrome.app/Contents/MacOS/Google Chrome}"
-pandoc resume/resume.md -f gfm+hard_line_breaks -t html5 -s --metadata title="Mansurov Baxodir - CV" \
+pandoc resume/resume.md -f gfm+hard_line_breaks -t html5 -s --metadata title="Baxodir Mansurov - DevOps & Backend Engineer CV" \
   -c "$PWD/scripts/cv.css" -o "$TMP/cv.html"
 # pandoc adds a title header block; drop it (h1 comes from the markdown)
 sed -i '' '/<header id="title-block-header">/,/<\/header>/d' "$TMP/cv.html"

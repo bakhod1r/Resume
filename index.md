@@ -3,6 +3,6 @@ layout: default
 title: Mansurov Baxodir — Resume
 ---
 
-[⬇ Download PDF](Mansurov_Baxodir_CV.pdf){: download="Mansurov_Baxodir_CV.pdf"}
+[⬇ Download PDF](Baxodir_Mansurov_DevOps_Backend_Engineer_CV.pdf){: download="Baxodir_Mansurov_DevOps_Backend_Engineer_CV.pdf"}
 
 {% include_relative resume/resume.md %}
